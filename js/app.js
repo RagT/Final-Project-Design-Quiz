@@ -2,10 +2,6 @@ angular.module('designApp', ['ngRoute'])
 
 .config(function($routeProvider){
 	$routeProvider
-	.when('/', {
-		templateUrl: 'templates/home.html',
-		controller: 'quizCtrl',
-	})
 	.when('/1/', {
 		templateUrl: 'templates/part1.html',
 		controller: 'quizCtrl',

@@ -1,5 +1,5 @@
 body {
-	background-image: url("img/bg.jpg");
+	background-image: url("../images/intro_img/bg.jpg");
 	background-repeat: no-repeat;
     background-size: cover;
 }
@@ -56,4 +56,13 @@ body {
 	top: 560px;
 	background-color: #FF8000;
 	color: white;
+}
+
+a {
+	color: black;
+}
+
+a:hover, a:focus{
+	text-decoration: none;
+	color: yellow;
 }
