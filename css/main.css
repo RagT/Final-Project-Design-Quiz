@@ -1,6 +1,12 @@
 /*
 Put any external css here.
 */
-header{
-	background-color: yellow;
+/*Sample css*/
+body{
+	background-image: url("../Backgrounds/crossword.png");
+}
+
+/*Sample css*/
+div{
+	font-weight: bold;
 }
