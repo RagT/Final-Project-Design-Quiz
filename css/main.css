@@ -12,6 +12,18 @@ div{
 }
 
 img {
-	width: 100px;
-	height: auto;
+	width: 230px;
+	height: 230px;
+}
+
+.col-md-2 {
+	margin: 10px;
+}
+
+.row {
+	margin-bottom: 90px;
+}
+
+.partspan {
+	font-size: 13px;
 }
