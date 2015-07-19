@@ -93,17 +93,17 @@ angular.module('designApp', ['ngRoute'])
   
     $scope.getMax = function(){
     	var max = Math.max($scope.boho, $scope.modern, 
-    		$scope.traditional, $scope.industrial, $scope.cottage);;
+    		$scope.traditional, $scope.industrial, $scope.cottage);
     	if($scope.boho == max){
-    		return $scope.boho;
+    		return "boho";
     	} else if($scope.modern == max){
-    		return $scope.modern;
+    		return "modern";
     	} else if($scope.traditional == max){
-    		return $scope.traditional;
+    		return "traditional";
     	} else if($scope.cottage == max){
-    		return $scope.cottage();
+    		return "cottage";
     	} else {
-    		return $scope.industrial;
+    		return "industrial";
     	}
     }
 })
