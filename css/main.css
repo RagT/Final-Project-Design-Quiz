@@ -5,8 +5,6 @@ Put any external css here.
 */
 /*Sample css*/
 body{
-	background-image: url("../Backgrounds/contemporary_china.png");
-
 	background-image: url("../Backgrounds/halftone.png");
 	font-family: 'Biryani', sans-serif; 
 }
@@ -36,4 +34,38 @@ h1 {
 
 .partspan {
 	font-size: 13px;
+}
+
+.resultbackground {
+	position: fixed;
+	width: 200%;
+	height: 200%;
+	top: -50%;
+	left: -50%;
+	
+}
+
+.resultbackground img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	min-width: 50%;
+	min-height: 50%;
+}
+
+.details {
+	background-color: rgba(227, 235, 241, 0.8);
+	padding: 21px;
+	border-radius: 4px;
+	position: relative;
+	width: 800px;
+	z-index: 2;
+	margin: 70px;
+}
+
+.details p {
+	font-size: 18px;
 }
