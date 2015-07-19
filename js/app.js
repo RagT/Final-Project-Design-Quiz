@@ -4,27 +4,48 @@ angular.module('designApp', ['ngRoute'])
 	$routeProvider
 	.when('/1/', {
 		templateUrl: 'templates/part1.html',
-		controller: 'quizCtrl',
+		controller: 'page1Ctrl',
 
 	})
 	.when('/2/', {
 		templateUrl: 'templates/part2.html',
-		controller: 'quizCtrl',
+		controller: 'page2Ctrl',
 	})
 	.when('/3/', {
 		templateUrl: 'templates/part3.html',
-		controller: 'quizCtrl',
+		controller: 'page3Ctrl',
 	})
 	.when('/4/', {
 		templateUrl: 'templates/part4.html',
-		controller: 'quizCtrl',
+		controller: 'page4Ctrl',
 	})
 	.when('/5/', {
 		templateUrl: 'templates/part5.html',
-		controller: 'quizCtrl',
+		controller: 'page5Ctrl',
 	})
 })
 
-.controller('quizCtrl', function($scope){
+.factory("answers",function(){
+        return {};
+})
 
+.controller( "page1Ctrl",function($scope, answers){
+    $scope.quizData = answers;
+})
+
+.controller( "page2Ctrl",function($scope, answers){
+    $scope.quizData = answers;
+})
+
+.controller( "page3Ctrl",function($scope, answers){
+    $scope.quizData = answers;
+})
+
+.controller( "page4Ctrl",function($scope, answers){
+    $scope.quizData = answers;
+})
+
+.controller( "page5Ctrl",function($scope, answers){
+    $scope.quizData = answers;
+   
 })
