@@ -1,0 +1,73 @@
+body {
+	background-image: url("img/bg.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rooms:hover {
+	cursor: pointer;
+}
+
+.rooms .outside {
+	position: absolute;
+	top: 125px;
+}
+
+.rooms .inside {
+	position: absolute;
+	top: 147px;
+}
+
+.rooms .middle {
+	position: absolute;
+	top: 160px;
+}
+
+.rooms .bath {
+	position: absolute;
+	left: 46px;
+}
+
+.rooms .bed {
+	position: absolute;
+	left: 300px;
+	top: 146px;
+}
+
+.rooms .dining {
+	position: absolute;
+	left: 548px;
+}
+
+.rooms .kitchen {
+	position: absolute;
+	left: 803px;
+}
+
+.rooms .living {
+	position: absolute;
+	left: 1054px;
+	top: 126px;
+}
+
+.btn {
+	position: relative;
+	left: 1000px;
+	top: 560px;
+	background-color: #FF8000;
+	color: white;
+}
+
+#intro {
+	position: relative;
+	left: 90px;
+	top: 330px;
+	font-size: 23px;
+}
+
+footer {
+	float: left;
+	position: fixed;
+	left: 46px;
+	bottom: 0px;
+}
