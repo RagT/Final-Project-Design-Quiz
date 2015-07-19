@@ -5,16 +5,14 @@ Put any external css here.
 */
 /*Sample css*/
 body{
-<<<<<<< HEAD
 	background-image: url("../Backgrounds/contemporary_china.png");
-=======
+
 	background-image: url("../Backgrounds/halftone.png");
 	font-family: 'Biryani', sans-serif; 
->>>>>>> 6fffff8e547866d35365e2de906b79553105d890
 }
 
 /*Sample css*/
-div{
+div {
 	font-weight: bold;
 }
 
