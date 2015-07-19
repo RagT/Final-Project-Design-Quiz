@@ -23,6 +23,26 @@ angular.module('designApp', ['ngRoute'])
 		templateUrl: 'templates/part5.html',
 		controller: 'page5Ctrl',
 	})
+	.when('/boho/', {
+		templateUrl: 'templates/Results/boho.html',
+		controller: 'resultsCtrl',
+	})
+	.when('/modern/', {
+		templateUrl: 'templates/Results/modern.html',
+		controller: 'resultsCtrl',
+	})
+	.when('/cottage/', {
+		templateUrl: 'templates/Results/cottage.html',
+		controller: 'resultsCtrl',
+	})
+	.when('/industrial/', {
+		templateUrl: 'templates/Results/industrial.html',
+		controller: 'resultsCtrl',
+	})
+	.when('/traditional/', {
+		templateUrl: 'templates/Results/traditional.html',
+		controller: 'resultsCtrl',
+	})
 })
 
 .factory("answers",function(){
@@ -47,5 +67,31 @@ angular.module('designApp', ['ngRoute'])
 
 .controller( "page5Ctrl",function($scope, answers){
     $scope.quizData = answers;
-   
+    
+    $scope.countResults = function(){
+    	$scope.boho = 0;
+    	$scope.modern = 0;
+    	$scope.traditional = 0;
+    	$scope.industrial = 0;
+    	$scope.cottage = 0;
+
+    	for(var key in $scope.quizData){
+    		if($scope.quizData[key] == "boho"){
+    			$scope.boho++;
+    		} else if($scope.quizData[key] == "industrial"){
+    			$scope.industrial++;
+    		} else if($scope.quizData[key] == "traditional"){
+    			$scope.traditional++;
+    		} else if($scope.quizData[key] == "modern"){
+    			$scope.modern++;
+    		} else if($scope.quizData[key] == "cottage"){
+    			$scope.cottage++;
+    		}
+    	}
+    }
+
+    $scope.maxCount = function(){
+    	return Math.max($scope.boho, $scope.modern, 
+    		$scope.traditional, $scope.industrial, $scope.cottage);
+    }
 })
