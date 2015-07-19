@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Catalyst Remodel Coach</title>
+	<link href="index.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="rooms">
+		<img class="outside bath" src="img/bath1.png" alt="bath1">
+		<img class="inside bed" src="img/bed1.png" alt="bed1">
+		<img class="middle dining" src="img/dining1.png" alt="dining1">
+		<img class="inside kitchen" src="img/kitchen1.png" alt="kitchen1">
+		<img class="outside living" src="img/living1.png" alt="living1">
+	</div>
+	<div class="rooms">
+		<img class="outside bath" data-anijs="if:mouseover, do:wobble animated" src="img/bath0.png" alt="bath0">
+		<img class="inside bed" data-anijs="if:mouseover, do:wobble animated" src="img/bed0.png" alt="bed0">	
+		<img class="middle dining" data-anijs="if:mouseover, do:wobble animated" src="img/dining0.png" alt="dining0">	
+		<img class="inside kitchen" data-anijs="if:mouseover, do:wobble animated" src="img/kitchen0.png" alt="kitchen0">	
+		<img class="outside living" data-anijs="if:mouseover, do:wobble animated" src="img/living0.png" alt="living0">
+	</div>
+	<div>
+		<button type="button" class="btn btn-lg" data-anijs="if:mouseover, do:pulse animated">START QUIZ</button>
+	</div>
+	<div>
+		<img id="intro" src="img/introduction.png" alt="intro">
+	</div>
+	<footer>
+		<img src="img/company.png" alt="company">
+	</footer>
+	<script src="http://anijs.github.io/lib/anijs/anijs.js"></script>
+ 	<script src="http://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+</body>
+</html>

@@ -1,9 +1,16 @@
+@import url(http://fonts.googleapis.com/css?family=Biryani:400,600);
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
 /*
 Put any external css here.
 */
 /*Sample css*/
 body{
+<<<<<<< HEAD
 	background-image: url("../Backgrounds/contemporary_china.png");
+=======
+	background-image: url("../Backgrounds/halftone.png");
+	font-family: 'Biryani', sans-serif; 
+>>>>>>> 6fffff8e547866d35365e2de906b79553105d890
 }
 
 /*Sample css*/
@@ -14,6 +21,11 @@ div{
 img {
 	width: 230px;
 	height: 230px;
+}
+
+h1 {
+	font-family: 'Varela Round', sans-serif;
+	font-size: 45px;
 }
 
 .col-md-2 {
