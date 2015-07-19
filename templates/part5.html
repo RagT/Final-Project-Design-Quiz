@@ -180,10 +180,10 @@
 	<button class="btn-btn-primary"><a href="#/4">Previous</a></button>
 	{{countResults()}}
 	<span ng-if="quizData.living1 != null && quizData.living2 != null && quizData.living3 != null && quizData.living4 != null && quizData.living5 != null">
-		<button class="btn btn-default" ng-if="boho == maxCount()"><a href="#/boho">Results</a></button>
-		<button class="btn btn-default" ng-if="modern == maxCount()"><a href="#/modern">Results</a></button>
-		<button class="btn btn-default" ng-if="cottage == maxCount()"><a href="#/cottage">Results</a></button>
-		<button class="btn btn-default" ng-if="traditional == maxCount()"><a href="#/traditional">Results</a></button>
-		<button class="btn btn-default" ng-if="industrial == maxCount()"><a href="#/industrial">Results</a></button>
+		<button class="btn btn-default" ng-if="boho == getMax()"><a href="#/boho">Results</a></button>
+		<button class="btn btn-default" ng-if="modern == getMax()"><a href="#/modern">Results</a></button>
+		<button class="btn btn-default" ng-if="cottage == getMax()"><a href="#/cottage">Results</a></button>
+		<button class="btn btn-default" ng-if="traditional == getMax()"><a href="#/traditional">Results</a></button>
+		<button class="btn btn-default" ng-if="industrial == getMax()"><a href="#/industrial">Results</a></button>
 	</span>
 </div>
