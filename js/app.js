@@ -107,3 +107,7 @@ angular.module('designApp', ['ngRoute'])
     	}
     }
 })
+
+.controller('resultsCtrl', function($scope){
+	
+})

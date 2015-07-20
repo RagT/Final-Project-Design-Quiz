@@ -1,68 +1,61 @@
 body {
-	background-image: url("../images/intro_img/bg.jpg");
-	background-repeat: no-repeat;
-    background-size: cover;
+	background-image: url('../images/intro_img/congruent_pentagon.png');
+	background-repeat: repeat;
 }
 
-.rooms:hover {
+#company, #lamp, #light {
+	text-align: center;
+}
+
+#company {
+	margin-top: 70px;
+	font-size: 30px;
+}
+
+#head, #body, #string, #light, .btn {
+	position: absolute;
+}
+
+#head {
+	left: 520px;
+	top: 10px;
+	z-index: -1;
+	opacity: 0.5;
+}
+
+#head.bright {
+	opacity: 0.9;
+}
+
+#body, #string {
+	z-index: -2;
+	top: 170px;
+}
+
+#body {
+	left: 614px;
+}
+
+#string {
+	left: 700px;
 	cursor: pointer;
+	z-index: 1;
 }
 
-.rooms .outside {
-	position: absolute;
-	top: 125px;
+#light {
+	left: 400px;
+	top: 170px;
+	opacity: 0;
+	transition: 0.5s;
 }
 
-.rooms .inside {
-	position: absolute;
-	top: 138px;
-}
-
-.rooms .middle {
-	position: absolute;
-	top: 148px;
-}
-
-.rooms .bath {
-	position: absolute;
-	left: 46px;
-}
-
-.rooms .bed {
-	position: absolute;
-	left: 300px;
-	top: 137px;
-}
-
-.rooms .dining {
-	position: absolute;
-	left: 548px;
-}
-
-.rooms .kitchen {
-	position: absolute;
-	left: 803px;
-}
-
-.rooms .living {
-	position: absolute;
-	left: 1054px;
-	top: 126px;
+#light.on{
+	opacity: 1;
+	transition: 2s;
+	z-index: 1;
 }
 
 .btn {
-	position: relative;
-	left: 1000px;
-	top: 560px;
-	background-color: #FF8000;
-	color: white;
-}
-
-a {
-	color: black;
-}
-
-a:hover, a:focus{
-	text-decoration: none;
-	color: yellow;
+	top: 420px;
+	left: 320px;
 }
