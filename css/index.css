@@ -52,10 +52,8 @@ body {
 #light.on{
 	opacity: 1;
 	transition: 2s;
-<<<<<<< HEAD
+
 	z-index: 1;
-=======
->>>>>>> 23dd3c9d0e0853cabde646b0d9b2bc76d3448bcf
 }
 
 .btn {
