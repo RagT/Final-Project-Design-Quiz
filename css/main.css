@@ -4,7 +4,11 @@
 Put any external css here.
 */
 /*Sample css*/
+<<<<<<< HEAD
 body {
+=======
+body{
+>>>>>>> origin/master
 	background-color: #BEBEBE;
 }
 
@@ -12,6 +16,7 @@ body {
 	background-color: #FFFAFF;
 	width: 90vw;
 	height: 100%;
+<<<<<<< HEAD
 	margin-top: 12vh;
 	margin-right: auto;
 	margin-left: auto;
@@ -35,6 +40,23 @@ h4 {
 	font-weight: normal;
 }
 
+=======
+	margin-top: 8vh;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+h4 {
+	position: absolute;
+	font-size: 16px;
+	top: 4vh;
+	left: 4.5%;
+	font-family: "Courier New", serif;
+	font-weight: normal;
+}
+
+>>>>>>> origin/master
 /*Sample css*/
 
 img {
@@ -112,6 +134,11 @@ a:hover, a:focus {
 	text-decoration: none;
 }
 
+<<<<<<< HEAD
+=======
+}
+
+>>>>>>> origin/master
 input[type="radio"] {
 	display: none;
 }
