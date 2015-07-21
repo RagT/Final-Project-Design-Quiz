@@ -25,23 +25,18 @@ angular.module('designApp', ['ngRoute'])
 	})
 	.when('/boho/', {
 		templateUrl: 'templates/Results/boho.html',
-		controller: 'resultsCtrl',
 	})
 	.when('/modern/', {
 		templateUrl: 'templates/Results/modern.html',
-		controller: 'resultsCtrl',
 	})
 	.when('/cottage/', {
 		templateUrl: 'templates/Results/cottage.html',
-		controller: 'resultsCtrl',
 	})
 	.when('/industrial/', {
 		templateUrl: 'templates/Results/industrial.html',
-		controller: 'resultsCtrl',
 	})
 	.when('/traditional/', {
 		templateUrl: 'templates/Results/traditional.html',
-		controller: 'resultsCtrl',
 	})
 })
 
@@ -108,6 +103,3 @@ angular.module('designApp', ['ngRoute'])
     }
 })
 
-.controller('resultsCtrl', function($scope){
-	
-})
