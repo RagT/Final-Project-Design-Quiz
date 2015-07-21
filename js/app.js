@@ -1,11 +1,11 @@
 angular.module('designApp', ['ngRoute'])
 
+//Routes for application with links to templates.
 .config(function($routeProvider){
 	$routeProvider
 	.when('/1/', {
 		templateUrl: 'templates/part1.html',
 		controller: 'page1Ctrl',
-
 	})
 	.when('/2/', {
 		templateUrl: 'templates/part2.html',
@@ -40,9 +40,12 @@ angular.module('designApp', ['ngRoute'])
 	})
 })
 
+//Factory for storing user answers for the quiz.
 .factory("answers",function(){
         return {};
 })
+
+//Controllers for different parts of the quiz.
 
 .controller( "page1Ctrl",function($scope, answers){
     $scope.quizData = answers;
@@ -63,6 +66,7 @@ angular.module('designApp', ['ngRoute'])
 .controller( "page5Ctrl",function($scope, answers){
     $scope.quizData = answers;
     
+    //Go through user answers and get counts for each category based on results.
     $scope.countResults = function(){
     	$scope.boho = 0;
     	$scope.modern = 0;
@@ -85,7 +89,7 @@ angular.module('designApp', ['ngRoute'])
     	}
     }
 
-  
+  	//Returns a string that shows which style the user chose based on the quiz results.
     $scope.getMax = function(){
     	var max = Math.max($scope.boho, $scope.modern, 
     		$scope.traditional, $scope.industrial, $scope.cottage);
