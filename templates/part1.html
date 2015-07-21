@@ -1,6 +1,6 @@
-<div >
+<h4>Choose your most preferred bathroom style for each row <span class="partspan">[Part 1 of 5]</span></h4>
+<div class="main">
 	<h2>Bathrooms</h2>
-	<p>Choose your most preferred bathroom style for each row <span class="partspan">[Part 1 of 5]</span></p>
 	<form>
 		<div class="row">
 			<div class="col-md-2 col-md-offset-1">
@@ -21,7 +21,6 @@
 					<img src="images/modern/modernbath1.jpg"></img>
 				</label>
 			</div>
-
 			<div class="col-md-2">
 				<input type="radio" id="industrustbath1" value="industrial" ng-model="quizData.bath1">
 				<label for="industrustbath1">
@@ -36,9 +35,10 @@
 			</div>
 		</div>
 
+		<hr>
 
 		<div class="row">
-			<div class="col-md-2 col-md-offset-1">
+			<div class="col-md-2 col-md-offset-1 options">
 				<input type="radio" id="tradbath2" ng-model="quizData.bath2" value="traditional">
 				<label for="tradbath2">
 					<img src="images/traditional/tradbath2.jpg"></img>
@@ -50,31 +50,27 @@
 					<img src="images/modern/modernbath2.jpg"></img>
 				</label>
 			</div>
-
 			<div class="col-md-2">
 				<input type="radio" id="bohobath2" value="boho" ng-model="quizData.bath2">
 				<label for="bohobath2">
 					<img src="images/Electic bohemian/bohobath2.jpg"></img>
 				</label>
 			</div>
-
-
 			<div class="col-md-2">
 				<input type="radio" id="industrustbath2" value="industrial" ng-model="quizData.bath2">
 				<label for="industrustbath2">
 					<img src="images/Industrial/industrustbath2.jpg"></img>
 				</label>
 			</div>
-
 			<div class="col-md-2">
 				<input type="radio" id="cottagebath2" value="cottage" ng-model="quizData.bath2">
 				<label for="cottagebath2">
 					<img src="images/cottage farmhouse/cottagebath2.jpg"></img>
 				</label>
 			</div>
-
-
 		</div>
+
+		<hr>
 
 		<div class="row">
 			<div class="col-md-2 col-md-offset-1">
@@ -83,14 +79,12 @@
 					<img src="images/cottage farmhouse/cottagebath3.jpg"></img>
 				</label>
 			</div>
-
 			<div class="col-md-2">
 				<input type="radio" id="tradbath3" value="traditional" ng-model="quizData.bath3">
 				<label for="tradbath3">
 					<img src="images/traditional/tradbath3.jpg"></img>
 				</label>
 			</div>
-
 			<div class="col-md-2">
 				<input type="radio" id="industrustbath3" value="industrial" ng-model="quizData.bath3">
 				<label for="industrustbath3">
@@ -103,7 +97,6 @@
 					<img src="images/modern/modernbath3.jpg"></img>
 				</label>
 			</div>
-
 			<div class="col-md-2">
 				<input type="radio" id="bohobath3" value="boho" ng-model="quizData.bath3">
 				<label for="bohobath3">
@@ -111,6 +104,8 @@
 				</label>
 			</div>			
 		</div>
+
+		<hr>
 
 		<div class="row">
 			<div class="col-md-2 col-md-offset-1">
@@ -137,7 +132,6 @@
 					<img src="images/modern/modernbath4.jpg"></img>
 				</label>
 			</div>
-
 			<div class="col-md-2">
 				<input type="radio" id="tradbath4" value="traditional" ng-model="quizData.bath4">
 				<label for="tradbath4">
@@ -145,6 +139,8 @@
 				</label>
 			</div>	
 		</div>
+
+		<hr>
 
 		<div class="row">
 			<div class="col-md-2 col-md-offset-1">
@@ -178,12 +174,10 @@
 				</label>
 			</div>				
 		</div>
-
 	</form>
+	</div>
 	
 	<div class="bottombuttons">
 		<button class="btn-btn-primary prevnextbutton"><a href="index.html">Previous</a></button>
 		<button ng-if="quizData.bath1 != null && quizData.bath2 != null && quizData.bath3 != null && quizData.bath4 != null && quizData.bath5 != null" class="btn-btn-primary prevnextbutton"><a href="#/2">Next</a></button>
 	</div>
-	
-</div>
