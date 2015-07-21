@@ -1,7 +1,29 @@
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(http://fonts.googleapis.com/css?family=Cuprum);
+
 body {
 	background-image: url('../images/intro_img/congruent_pentagon.png');
 	background-repeat: repeat;
 }
+
+#startbutton {
+	background: #FF0;
+	border: 3px double #FC6;
+	border-top-color: #FC9;
+	border-left-color: #FC9;
+	width: 150px;
+	height: 60px;
+	font-size: 23px;
+	font-family: 'Cuprum', sans-serif;
+	border-radius: 4px;
+	opacity: 0.85;
+	left: 415px;
+}
+
+#startbutton:hover {
+	background-color: #ff7979;
+}
+
 
 #company, #lamp, #light {
 	text-align: center;
@@ -9,7 +31,8 @@ body {
 
 #company {
 	margin-top: 70px;
-	font-size: 30px;
+	font-size: 40px;
+	font-family: 'Poiret One', cursive;
 }
 
 #head, #body, #string, #light, .btn {

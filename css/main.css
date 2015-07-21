@@ -70,11 +70,29 @@ h1 {
 	font-size: 18px;
 }
 
+.bottombuttons {
+	margin: 30px;
+	margin-bottom: 50px;
+
+}
+
+.prevnextbutton {
+	width: 150px;
+	height: 40px;
+	font-size: 21px;
+	margin: 10px;
+	border-radius: 3px;
+	border: 1px solid #e5dd80;
+	background-color: #fff68f;
+}
+
 a{
-	color: white;
+	color: #5b5b5b;
+
 }
 
 a:hover, a:focus{
-	color: yellow;
+	color: #088da5;
 	text-decoration: none;
+
 }

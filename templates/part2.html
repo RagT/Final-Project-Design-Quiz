@@ -182,6 +182,8 @@
 		</div>
 	</form>
 	
-	<button class="btn-btn-primary"><a href="#/1">Previous</a></button>
-	<button class="btn-btn-primary" ng-if="quizData.bed1 != null && quizData.bed2 != null && quizData.bed3 != null && quizData.bed4 != null && quizData.bed5 != null" class="btn-btn-primary"><a href="#/3">Next</a></button>
+	<div class="bottombuttons">
+		<button class="btn-btn-primary prevnextbutton"><a href="#/1">Previous</a></button>
+		<button class="btn-btn-primary prevnextbutton" ng-if="quizData.bed1 != null && quizData.bed2 != null && quizData.bed3 != null && quizData.bed4 != null && quizData.bed5 != null" class="btn-btn-primary"><a href="#/3">Next</a></button>
+	</div>
 </div>
