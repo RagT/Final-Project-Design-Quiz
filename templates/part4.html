@@ -1,6 +1,8 @@
-<div>
-	<h2>Kitchens</h2>
-	<p>Choose your most preferred kitchen style for each row <span class="partspan">[Part 4 of 5]</span></p>
+<h2>Kitchens</h2>
+<h4>Choose your most preferred kitchen style for each row <span class="partspan">[Part 4 of 5]</span></h4>
+
+<div class="main">
+
 	<form>
 		<div class="row">
 			<div class="col-md-2 col-md-offset-1">
@@ -38,7 +40,7 @@
 				</label>
 			</div>
 		</div>
-
+		<hr>
 		<div class="row">
 			<div class="col-md-2 col-md-offset-1">
 				<input type="radio" id="tradkitchen2" value="traditional" ng-model="quizData.kitchen2">
@@ -73,7 +75,7 @@
 				</label>
 			</div>
 		</div>
-
+		<hr>
 		<div class="row">
 			<div class="col-md-2 col-md-offset-1">
 				<input type="radio" id="cottagekitchen3" value="cottage" ng-model="quizData.kitchen3">
@@ -111,7 +113,7 @@
 				</label>
 			</div>			
 		</div>
-
+		<hr>
 		<div class="row">
 			<div class="col-md-2 col-md-offset-1">
 				<input type="radio" id="tradkitchen4" value="traditional" ng-model="quizData.kitchen4">
@@ -146,7 +148,7 @@
 				</label>
 			</div>
 		</div>
-
+		<hr>
 		<div class="row">
 			<div class="col-md-2 col-md-offset-1">
 				<input type="radio" id="modernkitchen5" value="modern" ng-model="quizData.kitchen5">
@@ -182,9 +184,8 @@
 			</div>				
 		</div>
 	</form>
-
-	<div class="bottombuttons">
-		<button class="btn-btn-primary prevnextbutton"><a href="#/3">Previous</a></button>
-		<button class="btn-btn-primary prevnextbutton" ng-if="quizData.kitchen1 != null && quizData.kitchen2 != null && quizData.kitchen3 != null && quizData.kitchen4 != null && quizData.kitchen5 != null" class="btn-btn-primary"><a href="#/5">Next</a></button>
-	</div>
+</div>
+<div class="bottombuttons">
+	<button class="btn-btn-primary prevnextbutton"><a href="#/3">Previous</a></button>
+	<button class="btn-btn-primary prevnextbutton" ng-if="quizData.kitchen1 != null && quizData.kitchen2 != null && quizData.kitchen3 != null && quizData.kitchen4 != null && quizData.kitchen5 != null" class="btn-btn-primary"><a href="#/5">Next</a></button>
 </div>

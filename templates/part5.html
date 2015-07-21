@@ -1,6 +1,7 @@
-<div>
-	<h2>Living Rooms</h2>
-	<p>Choose your most preferred living room style for each row <span class="partspan">[Part 5 of 5]</span></p>
+<h2>Living Rooms</h2>
+<h4>Choose your most preferred living room style for each row <span class="partspan">[Part 5 of 5]</span></h4>
+
+<div class="main">
 	<form>
 		<div class="row">
 			<div class="col-md-2 col-md-offset-1">
@@ -37,7 +38,7 @@
 				</label>
 			</div>
 		</div>
-
+		<hr>
 		<div class="row">
 			<div class="col-md-2 col-md-offset-1">
 				<input type="radio" id="tradliving2" value="traditional" ng-model="quizData.living2">
@@ -71,7 +72,7 @@
 				</label>
 			</div>		
 		</div>
-
+		<hr>
 		<div class="row">
 			<div class="col-md-2 col-md-offset-1">
 				<input type="radio" id="cottageliving3" value="cottage" ng-model="quizData.living3">
@@ -107,7 +108,7 @@
 				</label>
 			</div>			
 		</div>
-
+		<hr>
 		<div class="row">
 			<div class="col-md-2 col-md-offset-1">
 				<input type="radio" id="industrustliving4" value="industrial" ng-model="quizData.living4">
@@ -140,10 +141,8 @@
 					<img src="images/cottage farmhouse/cottageliving4.jpg"></img>
 				</label>
 			</div>
-
-				
 		</div>
-
+		<hr>
 		<div class="row">
 			<div class="col-md-2 col-md-offset-1">
 				<input type="radio" id="modernliving5" value="modern" ng-model="quizData.living5">
@@ -177,16 +176,15 @@
 			</div>				
 		</div>
 	</form>
-
-	<div class="bottombuttons">
-		<button class="btn-btn-primary prevnextbutton"><a href="#/4">Previous</a></button>
-		{{countResults()}}
-		<span ng-if="quizData.living1 != null && quizData.living2 != null && quizData.living3 != null && quizData.living4 != null && quizData.living5 != null">
-			<button class="btn btn-default prevnextbutton" ng-if="getMax() == 'boho'"><a href="#/boho">Results</a></button>
-			<button class="btn btn-default prevnextbutton" ng-if="getMax() == 'modern'"><a href="#/modern">Results</a></button>
-			<button class="btn btn-default prevnextbutton" ng-if="getMax() == 'cottage'"><a href="#/cottage">Results</a></button>
-			<button class="btn btn-default prevnextbutton" ng-if="getMax() == 'traditional'"><a href="#/traditional">Results</a></button>
-			<button class="btn btn-default prevnextbutton" ng-if="getMax() == 'industrial'"><a href="#/industrial">Results</a></button>
-		</span>
-	</div>
+</div>
+<div class="bottombuttons">
+	<button class="btn-btn-primary prevnextbutton"><a href="#/4">Previous</a></button>
+	{{countResults()}}
+	<span ng-if="quizData.living1 != null && quizData.living2 != null && quizData.living3 != null && quizData.living4 != null && quizData.living5 != null">
+		<button class="btn btn-default prevnextbutton" ng-if="getMax() == 'boho'"><a href="#/boho">Results</a></button>
+		<button class="btn btn-default prevnextbutton" ng-if="getMax() == 'modern'"><a href="#/modern">Results</a></button>
+		<button class="btn btn-default prevnextbutton" ng-if="getMax() == 'cottage'"><a href="#/cottage">Results</a></button>
+		<button class="btn btn-default prevnextbutton" ng-if="getMax() == 'traditional'"><a href="#/traditional">Results</a></button>
+		<button class="btn btn-default prevnextbutton" ng-if="getMax() == 'industrial'"><a href="#/industrial">Results</a></button>
+	</span>
 </div>
