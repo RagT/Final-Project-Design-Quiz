@@ -1,5 +1,5 @@
 body {
-	background: #BEBEBE;
+	background-color: #BEBEBE;
 }
 
 #company {
@@ -16,6 +16,7 @@ body {
 	height: 80vh;
 	width: 80%;
 	background-color: #FFFAFF;
+	overflow: auto;
 }
 
 #img {

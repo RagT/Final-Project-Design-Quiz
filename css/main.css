@@ -4,19 +4,42 @@
 Put any external css here.
 */
 /*Sample css*/
-body{
-	background-image: url("../Backgrounds/norwegian_rose.png");
-	font-family: 'Biryani', sans-serif; 
+body {
+	background-color: #BEBEBE;
+}
+
+.main {
+	background-color: #FFFAFF;
+	width: 90vw;
+	height: 100%;
+	margin-top: 12vh;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+h2 {
+	background-color: pink;
+	color: white;
+	position: absolute;
+	left: 4.5%;
+	top: 0px;
+}
+
+h4 {
+	position: absolute;
+	font-size: 16px;
+	top: 7vh;
+	left: 4.5%;
+	font-family: "Courier New", serif;
+	font-weight: normal;
 }
 
 /*Sample css*/
-div {
-	font-weight: bold;
-}
 
 img {
-	width: 230px;
-	height: 230px;
+	width: 200px;
+	height: 200px;
 }
 
 h1 {
@@ -26,10 +49,6 @@ h1 {
 
 .col-md-2 {
 	margin: 10px;
-}
-
-.row {
-	margin-bottom: 90px;
 }
 
 .partspan {
@@ -71,9 +90,7 @@ h1 {
 }
 
 .bottombuttons {
-	margin: 30px;
-	margin-bottom: 50px;
-
+	text-align: center;
 }
 
 .prevnextbutton {
@@ -86,13 +103,27 @@ h1 {
 	background-color: #eeeeee;
 }
 
-a{
+a {
 	color: #5b5b5b;
-
 }
 
-a:hover, a:focus{
+a:hover, a:focus {
 	color: #088da5;
 	text-decoration: none;
+}
 
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"]:checked + label { 
+    opacity: 0.5;
+    box-shadow: 5px 5px 10px #FF0066; 
+}
+
+hr {
+	height: 8px;
+	background-color: #BEBEBE;
+	border: none;
+	margin: 0;
 }
