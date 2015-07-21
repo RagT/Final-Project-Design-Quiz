@@ -1,6 +1,6 @@
-<div>
-	<h2>Bedrooms</h2>
-	<p>Choose your most preferred bedroom style for each row <span class="partspan">[Part 2 of 5]</span></p>
+<h2>Bedrooms</h2>
+<h4>Choose your most preferred bedroom style for each row <span class="partspan">[Part 2 of 5]</span></h4>
+<div class="main">
 	<form>
 		<div class="row">
 			<div class="col-md-2 col-md-offset-1">
@@ -38,7 +38,7 @@
 				</label>
 			</div>
 		</div>
-
+		<hr>
 		<div class="row">
 			<div class="col-md-2 col-md-offset-1">
 				<input type="radio" id="tradbed2" value="traditional" ng-model="quizData.bed2">
@@ -75,7 +75,7 @@
 			</div>
 
 		</div>
-
+		<hr>
 		<div class="row">
 			<div class="col-md-2 col-md-offset-1">
 				<input type="radio" id="industrustbed3" value="industrial" ng-model="quizData.bed3">
@@ -112,7 +112,7 @@
 				</label>
 			</div>			
 		</div>
-
+		<hr>
 		<div class="row">
 			<div class="col-md-2 col-md-offset-1">
 				<input type="radio" id="industrustbed4" value="industrial" ng-model="quizData.bed4">
@@ -147,7 +147,7 @@
 			</div>
 
 		</div>
-
+		<hr>
 		<div class="row">
 			<div class="col-md-2 col-md-offset-1">
 				<input type="radio" id="modernbed5" value="modern" ng-model="quizData.bed5">
@@ -181,9 +181,8 @@
 			</div>				
 		</div>
 	</form>
-	
-	<div class="bottombuttons">
+</div>
+<div class="bottombuttons">
 		<button class="btn-btn-primary prevnextbutton"><a href="#/1">Previous</a></button>
 		<button class="btn-btn-primary prevnextbutton" ng-if="quizData.bed1 != null && quizData.bed2 != null && quizData.bed3 != null && quizData.bed4 != null && quizData.bed5 != null" class="btn-btn-primary"><a href="#/3">Next</a></button>
 	</div>
-</div>

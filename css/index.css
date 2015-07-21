@@ -1,21 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(http://fonts.googleapis.com/css?family=Cuprum);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+
 body {
-	background-color: #BEBEBE;
+	background-image: url("../Backgrounds/diamonds.png");
 }
 
 #company {
-	position: absolute;
-	top: 7vh;
-	right: 10%;
-	font-size: 16px;
+	text-align: center;
+	font-size: 40px;
+	font-family: 'Poiret One', cursive;
 }
 
 #main {
-	margin-top: 10vh;
+	margin-top: auto;
 	margin-left: auto;
 	margin-right: auto;
 	height: 80vh;
 	width: 80%;
-	background-color: #FFFAFF;
+	background-image: url("../Backgrounds/agsquare.png");
 	overflow: auto;
 }
 
@@ -35,8 +38,8 @@ img {
 	margin-right: auto;
 	text-align: center;
 	width: 80%;
-	font-size: 16px;
-	font-family: "Courier New", serif;
+	font-size: 18px;
+	font-family: 'Droid Sans', "Courier New", serif;
 }
 
 #intro span {
@@ -45,25 +48,30 @@ img {
 }
 
 #button {
-	margin-top: 10vh;
+	margin-top: 9vh;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 	border-bottom: solid 2px gray;
 	border-top: solid 2px gray;
-	width: 50%;
+	width: 30%;
 	background-color: white;
 }
 
 #button p {
 	margin: 0;
-	font-family: "Lucida Console", Monaco, monospace;
-	font-size: 20px;
+	font-family: "Cuprum", "Lucida Console", Monaco, monospace;
+	font-size: 25px;
+}
+
+#button:hover {
+	background-color: #ff7979;
 }
 
 a:hover {
 	text-decoration: none;
 	font-weight: bold;
+
 }
 
 a:link, a:visited {
