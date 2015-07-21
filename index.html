@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Catalyst Remodel Coaching</title>
-	<link href="css/index.css" type="text/css" rel="stylesheet">
+	<title>:::Catalyst Remodel Coaching:::</title>
 	<link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link href="css/index.css" type="text/css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
-
-	<!-- <div id="company"><img src="img/company.png"></div> -->
-
-	<!-- <div id="company"><img src="images/intro_img/company.png"></div> -->
-
 	<div id="company"><p>Catalyst Remodel Coaching</p></div>
-	<div id="lamp">
-		<img id="head" class="lighton" src="images/intro_img/lamphead.png">
-		<img id="body" src="images/intro_img/lampbody.png">
-		<img id="string" data-anijs="if:load, do: swing animated; if:mouseover, do:swing animated; if:click, do:$toggleClass on, to:#light; if:click, do:$toggleClass bright, to:#head" src="images/intro_img/lampstring.png">
+	<div id="main">	
+		<div id="img">
+			<img src="images/intro_img/bath.jpg">
+			<img src="images/intro_img/dining.jpg">
+			<img src="images/intro_img/kitchen.jpg">
+		</div>
+		<div id="intro">
+			<p>This quiz will help you narrow down your preferred design aesthetic. As you look through the pictures to make your choice, do <span>not</span> think about what you have liked in the past, or think too much about the details of the pictures, just choose the the feel of the one you like best.<br /><span>Enjoy!</span> I look forward to mulling over the implications of the results with you.</p>
+		</div>
+		<div id="button" data-anijs="if: mouseover, do: pulse animated">
+			<p><a href="quiz.html#/1">START QUIZ</a></p>
+		</div>
+		<!-- <button type="button" class="btn btn-default" ><a href="quiz.html#/1">START QUIZ</a></button> -->
 	</div>
-	<div id="light">
-		<img src="images/intro_img/intro.png">
-		<button type="button" class="btn btn-default" id="startbutton" data-anijs="if: mouseover, do: pulse animated"><a href="quiz.html#/1">Start Quiz</a></button>
-	</div>
+	
 	<script src="http://anijs.github.io/lib/anijs/anijs.js"></script>
  	<script src="http://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
 </body>
