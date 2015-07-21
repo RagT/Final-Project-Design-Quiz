@@ -9,12 +9,12 @@
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div id="company"><p>Catalyst Remodel Coaching</p></div>
+	<div id="company" data-anijs="if: load, on: window, do: fadeInDown animated"><p>Catalyst Remodel Coaching</p></div>
 	<div id="main">	
 		<div id="img">
-			<img src="images/intro_img/bath.jpg">
-			<img src="images/intro_img/dining.jpg">
-			<img src="images/intro_img/kitchen.jpg">
+			<img src="images/intro_img/bath.jpg" data-anijs="if: mouseover, do: swing animated">
+			<img src="images/intro_img/dining.jpg" data-anijs="if: mouseover, do: wobble animated">
+			<img src="images/intro_img/kitchen.jpg" data-anijs="if: mouseover, do: flipInX animated">
 		</div>
 		<div id="intro">
 			<p>This quiz will help you narrow down your preferred design aesthetic. As you look through the pictures to make your choice, do <span>not</span> think about what you have liked in the past, or think too much about the details of the pictures, just choose the the feel of the one you like best.<br /><span>Enjoy!</span> I look forward to mulling over the implications of the results with you.</p>
