@@ -51,11 +51,15 @@ img {
 	margin-top: 9vh;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: center;
 	border-bottom: solid 2px gray;
 	border-top: solid 2px gray;
 	width: 30%;
 	background-color: white;
+}
+
+#centeredbutton {
+	text-align: center;
+	margin: auto;
 }
 
 #button p {
