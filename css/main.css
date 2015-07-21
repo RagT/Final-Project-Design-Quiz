@@ -92,6 +92,8 @@ h1 {
 
 .bottombuttons {
 	text-align: center;
+	margin-bottom: 25px;
+	margin-top: 10px;
 }
 
 .prevnextbutton {
@@ -102,6 +104,14 @@ h1 {
 	border-radius: 3px;
 	border: 1px solid #cccccc;
 	background-color: #eeeeee;
+	border-bottom: solid 1px gray;
+	border-top: solid 1px gray;
+}
+
+.prevnextbutton:hover {
+	background-color: #cbe4ff;
+	border-bottom: solid 1px #9eb4cc;
+	border-top: solid 1px #9eb4cc;
 }
 
 a {
